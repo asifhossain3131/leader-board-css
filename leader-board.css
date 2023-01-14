@@ -1,13 +1,124 @@
+/* common for all */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+ background: #E5E5E5;
+}
+/* top-player styles */
+.top{
+    display: flex;
+
+    justify-content: center;
+
+    
+}
+.top-container{
+    width: 870px;
+    background: #FFFFFF;
+border-radius: 5px;
+padding: 30px;
+
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 120px;
 }
-.players img{
+.player img{
     width: 56px;
-    height: 56px;
+height: 56px;
 }
 .player{
     display: flex;
-    gap: 15px;
-    margin-bottom: 29px;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+}
+.top-player-title{
+    margin-top: 28px;
+    margin-bottom: 40px;
+    margin-left: 33px;
+    font-weight: 500;
+font-size: 24px;
+color: #562EFF;
+}
+.player-name{
+    font-weight: 500;
+font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* blog styles */
+.blog-container{
+    display: flex;
+    gap: 16px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    padding: 30px;
+    gap: 20px;
+}
+.blog-banner img{
+    width: 177px;
+height: 117px;
+}
+
+/* latest course styles */
+.course-container{
+    width: 870px;
+    background-color: white;
+    margin-top: 16px;
+    border-radius: 5px;
+padding: 30px;
+}
+.courses{
+    display: flex;
+    gap: 24px;
+    padding: 30px;
+}
+.course{
+    width: 253px;
+}
+.course img{
+    width: 224px;
+}
+.course-info{
+    font-weight: 500;
+font-size: 20.0336px;
+}
+.course-author a{
+    font-weight: 400;
+font-size: 14.6913px;
+text-decoration: none;
+color: 
+#ED6B4F;
+}
+.fa-star.filled{
+    color: #FFC014;
+
+}
+.fa-star.empty{
+    color: grey;
+}
+.no-rate{
+    font-weight: 400;
+font-size: 14.6913px;
+color: grey;
+}
+.course-duration{
+    width: 95px;
+    background: #FFE4E8;
+border-radius: 14.6913px;
+}
+.fa-clock.filled1 , .time{
+    font-weight: 600;
+font-size: 14.6913px;
+color: #ED6B4F;
 }
